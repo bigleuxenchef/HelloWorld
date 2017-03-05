@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "CommonJS",
+    "moduleResolution": "classic"
+  },
+  "compileOnSave": false,
+  "include":["imports/lib/classes/entity/Entity.ts"]
+  
+}

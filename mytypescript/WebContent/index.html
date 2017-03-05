@@ -1,0 +1,41 @@
+<!DOCTYPE html lang="en">
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Angular JS test</title>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>   --> 
+	  <script src="angular.js"></script>
+	<script src="MyAngularController.js"></script>
+    <script src="mytypescript.ts"></script>
+
+</head>
+<body>
+
+
+<p id="eric">
+    test
+
+<div ng-app="EricAngularApp" ng-controller = "myCtrl" ng-init="name; eric2">
+    <p><label for="name">Name : </label><input id="name" type="text" ng-model="input_name"></p>
+    <h1>Hello {{input_name}}</h1>
+    <button id="classic-button" type="button" onclick="change('name')">
+        Classic button {{input_name}}
+    </button>
+    <br>
+    <button type="button" ng-click="ngchangeeric2()">angular button {{input_name}}</button>
+
+    <p>angular controller setting inner content
+    
+
+    <span id="eric2">{{nginiteric2()}}</span></p>
+    <p>Angular binding set in controller {{eric2}}</p>
+</div>
+</p>
+
+
+
+
+</body>
+</html>
